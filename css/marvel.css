@@ -1,0 +1,31 @@
+body {
+    background: #333;
+    color: #ddd;
+}
+
+.callout.large {
+    padding: 1.5rem;
+}
+.callout {
+    color: #eee;
+    border-bottom: 3px solid #222;
+    background: #444;
+}
+
+.parameters {
+    background: #333;
+}
+
+.results {
+    border-top: 3px solid #666;
+    background: #444;
+}
+
+label {
+    color: #ccc;
+    font-weight: bold;
+}
+
+.loading {
+	margin: 50px auto;
+}

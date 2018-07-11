@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Marvel API Test</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.1/foundation-flex.min.css">
+	<link rel="stylesheet" href="css/marvel.css">
+	<link rel="stylesheet" href="css/jellybox.css">
+</head>
+
+<body>
+	<!-- callout -->
+	<div class="callout large">
+		<div class="row column text-center">
+			<h1>Super Hero API Fun Time</h1>
+			<p class="lead">Playing around with the
+				<a href="https://developer.marvel.com/"> Marvel Comics API</a> and the <a href="http://superheroapi.com/">SuperHero API</a>
+			</p>
+		</div>
+	</div>
+
+	<!-- Parameters -->
+	<div class="row align-bottom parameters">
+		<div class="columns small-12 medium-expand">
+			<label>Character Name Begins With
+				<input type="text" id="starts-with" placeholder="A - Z" />
+			</label>
+		</div>
+		<div class="columns small-12 medium-expand">
+			<label>Number of Results
+				<select id="num-of-results">
+					<option value="5">5</option>
+					<option value="10">10</option>
+					<option value="20">20</option>
+					<option value="50">50</option>
+				</select>
+			</label>
+		</div>
+		<div class="columns small-12 medium-expand">
+			<label>Which API
+				<select id="api">
+					<option value="marvel">Official Marvel API</option>
+					<option value="superhero">SuperHero API</option>
+				</select>
+			</label>
+		</div>
+		<div class="columns small-12 medium-expand shrink">
+			<button class="button" onclick="queryAPI()">Search</button>
+		</div>
+	</div>
+
+	<!-- results -->
+	<div id="data-row" class="row small-up-2 medium-up-3 large-up-4 results">
+		<!-- Results go here -->
+		<div class="loading la-square-jelly-box">
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/md5.js"></script>
+	<script src="js/marvel.js"></script>
+</body>
+
+</html>
