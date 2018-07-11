@@ -16,7 +16,7 @@ function queryAPI() {
 		}
 		const apiBaseUrl = "http://gateway.marvel.com/v1/public/";
 		const pubKey = "f920384417ae0b0f4b66483348535bac";
-		const privKey = "460c757a253cd0d47add65f5f148b92bfb86cdd5";
+		const privKey = "xxx";  // removed from the repo - ask Christian :)
 		let ts = new Date().getTime();
 		let hash = CryptoJS.MD5(ts + privKey + pubKey).toString();
 		const method = "characters";
